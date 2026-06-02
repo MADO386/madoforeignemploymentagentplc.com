@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MADO Foreign Employment Agent PLC | Global Recruitment Specialists</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="logo">MADO PLC</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#services">Our Services</a>
+            <a href="#contact" class="btn-nav">Contact Us</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Bridging Talent with Global Opportunities</h1>
+            <p>MADO Foreign Employment Agent PLC connects skilled, qualified professionals with premier global employers. Your trusted partner in international recruitment.</p>
+            <div class="hero-buttons">
+                <a href="#services" class="btn-primary">Explore Services</a>
+                <a href="#contact" class="btn-secondary">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Our Core Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>💼 For Employers</h3>
+                <p>We source, screen, and vet top-tier international candidates tailored to your industry's precise workforce requirements.</p>
+            </div>
+            <div class="service-card">
+                <h3>🌍 For Job Seekers</h3>
+                <p>Discover life-changing career opportunities abroad. We provide complete guidance through the application, visa, and placement process.</p>
+            </div>
+            <div class="service-card">
+                <h3>📋 Compliance &amp; Logistics</h3>
+                <p>We manage legal documentation, international labor compliance, and orientation to ensure a smooth transition for both parties.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Connect With Our Experts</h2>
+        <p>Whether you are looking to hire or looking to deploy, our consultants are ready to assist you.</p>
+        
+        <form id="contact-form">
+            <input type="text" placeholder="Your Name or Company" required>
+            <input type="email" placeholder="Email Address" required>
+            <select required>
+                <option value="" disabled selected>I am a...</option>
+                <option value="employer">Employer looking for talent</option>
+                <option value="candidate">Job Seeker looking for work</option>
+                <option value="other">General Inquiry</option>
+            </select>
+            <textarea placeholder="How can we help you?" rows="5" required></textarea>
+            <button type="submit" class="btn-submit">Submit Inquiry</button>
+        </form>
+    </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 MADO Foreign Employment Agent PLC. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+<!-- Job Board Section -->
+    <section id="jobs" class="job-board">
+        <div class="section-header">
+            <h2>Current International Vacancies</h2>
+            <p>Explore elite global opportunities. Filter by industry and apply today.</p>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="job-filters">
+            <input type="text" id="job-search" placeholder="Search job titles or countries...">
+            <div class="filter-buttons">
+                <button class="filter-btn active" onclick="filterJobs('all')">All Sectors</button>
+                <button class="filter-btn" onclick="filterJobs('healthcare')">Healthcare</button>
+                <button class="filter-btn" onclick="filterJobs('engineering')">Engineering &amp; Tech</button>
+                <button class="filter-btn" onclick="filterJobs('hospitality')">Hospitality</button>
+            </div>
+        </div>
+
+        <!-- Jobs Grid Container -->
+        <div class="jobs-container" id="jobs-grid">
+            
+            <!-- Card 1 -->
+            <div class="job-card" data-category="healthcare">
+                <div class="job-badge contract">Full-Time</div>
+                <h3 class="job-title">Registered Nurse (ICU)</h3>
+                <p class="job-company">MADO Healthcare Partners</p>
+                <div class="job-details">
+                    <span>📍 Riyadh, Saudi Arabia</span>
+                    <span>💰 Competitive Base + Housing</span>
+                </div>
+                <p class="job-description">Seeking licensed nurses with 2+ years of critical care experience. Includes comprehensive flight and relocation packages.</p>
+                <button class="btn-apply" onclick="openApplyModal('Registered Nurse (ICU)')">Apply Now</button>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="job-card" data-category="engineering">
+                <div class="job-badge permanent">Permanent</div>
+                <h3 class="job-title">Structural Civil Engineer</h3>
+                <p class="job-company">Apex Infrastructure Group</p>
+                <div class="job-details">
+                    <span>📍 Doha, Qatar</span>
+                    <span>💰 Tax-Free Executive Salary</span>
+                </div>
+                <p class="job-description">Lead commercial structural designs. Requires an engineering degree and strong project coordination background.</p>
+                <button class="btn-apply" onclick="openApplyModal('Structural Civil Engineer')">Apply Now</button>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="job-card" data-category="hospitality">
+                <div class="job-badge contract">Contract</div>
+                <h3 class="job-title">Hotel Operations Supervisor</h3>
+                <p class="job-company">Grand Meridian Resorts</p>
+                <div class="job-details">
+                    <span>📍 Dubai, UAE</span>
+                    <span>💰 Lucrative Package + Allowances</span>
+                </div>
+                <p class="job-description">Manage daily front-of-house and guest services operations for an elite 5-star resort environment.</p>
+                <button class="btn-apply" onclick="openApplyModal('Hotel Operations Supervisor')">Apply Now</button>
+            </div>
+
+        </div>
+    </section>
